@@ -1,0 +1,1 @@
+This folder contains the java code of the problems on codechef.The questions are from beginner or easy or contest level and the solutions are provided in java.The file name is mentioned as the code given for the question in codechef and hence the user can find easy to search.
