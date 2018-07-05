@@ -1,0 +1,33 @@
+    #include <iostream>
+    using namespace std;
+    long long int c =1000000007;
+    int fibbo(long long n, long long a,long long b )  {
+    	if( n == 1)
+    		return (a+c)%c;
+    	else if(n==2)
+    		return (b+c)%c;	
+    	else  {
+    		n = n%6;
+    		return fibbo(n-1,a,b) - fibbo(n-2,a,b);
+    	}
+    	
+    }
+     
+    int main()  {
+    	int t;
+    	cin >> t;
+    	while(t--)  {
+    		long long a,b;
+    		long long x;
+    		cin >> a;
+    		cin >> b; 
+    		cin >> x;
+    		//cout << a << " " << b << " " << x;	
+    		x=x%6;
+    		long long arr[6] = {a-b, a, b,b-a,-a,-b};
+    		long long ser = 0;
+    		ser = (c+arr[x]%c)%c;
+    		cout <<ser<<endl;
+    		}
+    	return 0;
+    } /
